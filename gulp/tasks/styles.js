@@ -14,5 +14,5 @@ gulp.task('styles', function () {
             console.log(errorInfo.toString());
             this.emit('end');
         })
-        .pipe(gulp.dest('./app/temp/styles'));                       // 3. the output is gulp.dest (clean css file, after all the "filters")
+        .pipe(gulp.dest('./app/temp/styles'));                       // 3. the output is gulp.dest(destination) (clean css file, after all the "filters")
 });

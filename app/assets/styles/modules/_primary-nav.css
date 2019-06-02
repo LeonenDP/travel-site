@@ -1,59 +1,57 @@
 .primary-nav {
     padding-top: 10px;
 
-    @mixin atMedium{
-        padding-top: 0;
-    }
+@mixin atMedium {
+    padding-top: 0;
+}
 
-    &--pull-right {
-    @mixin atMedium{
-        float: right;
-    }
-    }
+&--pull-right {
+@mixin atMedium {
+    float: right;
+}
+}
 
+ul {
+    margin: 0;
+    padding: 0;
+@mixin clearfix;
+}
 
-     ul {
-         margin: 0;
-         padding: 0;
-         @mixin clearfix;
-     }
-     li{
-         list-style: none;
-         padding-right: 7px;
-         display: inline-block;
+li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 7px;
+@mixin atMedium {
+    padding-right: 20px;
+    float: left;
+    display: block;
+}
+}
 
-         @mixin atMedium {
-             float: left;
-             padding-right: 20px;
-             display: block;
-         }
-     }
-    li:last-child {
-        padding-right: 0;
+li:last-child {
+    padding-right: 0;
+@mixin atMedium {
+    padding-right: 20px;
+}
+}
 
-        @mixin atMedium{
-            padding-right: 20px;
-        }
-    }
-     a{
-         color: #FFF;
-         font-weight: 300;
-         text-decoration: none;
-         display: block;
-         padding: 5px 8px;
-        font-size: .8rem;
-         background-color: rgba($mainBlue, 0.5);
+a {
+    color: #FFF;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 5px 8px;
+    font-size: .8rem;
+    background-color: rgba($mainBlue, .5);
 
-         @mixin atMedium {
-             font-size: 1rem;
-             padding: 12px 0;
-             background-color: tranparent;
+@mixin atMedium {
+    font-size: 1rem;
+    padding: 12px 0;
+    background-color: transparent;
 
-
-             /* the "&.is-current-link" tells to target only if we have that class*/
-             &.is-current-link {
-                color: #fabb69;
-              }
-         }
-     }
+&.is-current-link {
+     color: #fabb69;
+ }
+}
+}
 }
